@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap");
-
 @font-face {
   font-family: "Pacifico";
   src: url(Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(Inter-VariableFont_opsz\,wght.ttf);
 }
 
 * {
@@ -19,6 +22,8 @@ body {
   --text-color: rgb(244, 242, 231);
   --hintergrundfarbe: rgb(34, 33, 33);
   --test: 34, 33, 33;
+  --button-color: rgb(206, 193, 19);
+  --hover-color: rgb(245, 51, 51);
 }
 
 .nav {
@@ -45,13 +50,13 @@ body {
 
 .menulink:hover,
 .footerlink:hover {
-  color: var(--primary-color);
+  color: var(--hover-color);
 }
 
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(bild\ hero.webp);
+    url(fleischbuffet.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,25 +76,39 @@ body {
 }
 
 .subtitle {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 2rem 0;
   color: var(--text-color);
 }
 
-.hero-action-button {
-  color: var(--text-color);
+.button {
+  color: var(--button-color);
   text-decoration: none;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  width: fit-content;
-  margin-top: 3rem;
-  display: flex;
+  position: relative;
+  display: inline-block;
   transition: 0.1s ease-in-out;
-  border: 1px solid var(--primary-color);
+  padding: 0;
 }
 
-.hero-action-button:hover {
-  color: var(--primary-color);
-  background-color: rgba(0, 0, 0, 0);
+.button-bild {
+  display: block;
+  width: 30vw;
+}
+
+.button-text {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  text-align: end;
+  font-size: 2.8vw;
+}
+
+.button:hover {
+  color: var(--hover-color);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button-bild:hover {
+  opacity: 0.5;
 }
 
 h2 {
@@ -117,23 +136,7 @@ h2 {
 .text {
   font-size: 0.9rem;
   color: var(--text-color);
-}
-
-.about-action-button {
-  color: white;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  width: fit-content;
-  margin-top: 2rem;
-  display: flex;
-  transition: 0.1s ease-in-out;
-  border: 1px solid var(--primary-color);
-}
-
-.about-action-button:hover {
-  color: var(--primary-color);
-  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 1rem;
 }
 
 .img {
@@ -141,7 +144,6 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0.5rem;
-  max-width: 80vw;
   margin-top: 2rem;
 }
 
@@ -170,7 +172,8 @@ h2 {
 
 #open {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(info.jpg);
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(essensplatten.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -217,20 +220,34 @@ h2 {
 }
 
 .mail-button {
-  color: var(--primary-color);
+  color: var(--button-color);
   text-decoration: none;
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0);
-  width: fit-content;
-  margin-top: 1rem;
-  display: flex;
+  position: relative;
+  display: inline-block;
   transition: 0.1s ease-in-out;
-  border: 1px solid var(--primary-color);
+  padding: 0;
+}
+
+.mail-button-bild {
+  display: block;
+  width: 30vw;
+}
+
+.mail-button-text {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  text-align: end;
+  font-size: 0.9rem;
 }
 
 .mail-button:hover {
-  color: white;
-  background-color: var(--primary-color);
+  color: var(--hover-color);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mail-button-bild:hover {
+  opacity: 0.5;
 }
 
 .footer {
@@ -268,9 +285,6 @@ h2 {
   .menulink {
     font-size: 1.2rem;
   }
-  .hero-action-button {
-    padding: 1.2rem 2.5rem;
-  }
   .text {
     font-size: 1rem;
   }
@@ -289,6 +303,18 @@ h2 {
     flex-direction: row;
     font-size: 1rem;
     gap: 2rem;
+  }
+  .button-bild {
+    width: 25vw;
+  }
+  .button-text {
+    font-size: 2.3vw;
+  }
+  .mail-button-bild {
+    width: 25vw;
+  }
+  .mail-button-text {
+    font-size: 2.3vw;
   }
 }
 
@@ -327,6 +353,18 @@ h2 {
   .footerlink {
     gap: 3rem;
   }
+  .button-bild {
+    width: 20vw;
+  }
+  .button-text {
+    font-size: 2vw;
+  }
+  .mail-button-bild {
+    width: 20vw;
+  }
+  .mail-button-text {
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -336,11 +374,19 @@ h2 {
     gap: 1rem;
     margin-top: 3rem;
   }
-  .hero-action-button,
-  .mail-button {
-    margin-top: 0;
-  }
   .footerlink {
     gap: 4rem;
+  }
+  .button-bild {
+    width: 15vw;
+  }
+  .button-text {
+    font-size: 1.5vw;
+  }
+  .mail-button-bild {
+    width: 15vw;
+  }
+  .mail-button-text {
+    font-size: 1.5vw;
   }
 }
