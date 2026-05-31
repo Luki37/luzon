@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap");
+
+@font-face {
+  font-family: "Lobster";
+  src: url(Lobster-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  font-family: "Inter", sans-serif;
+  background-color: var(--hintergrundfarbe);
+  --primary-color: rgb(245, 51, 51);
+  --text-color: rgb(244, 242, 231);
+  --hintergrundfarbe: rgb(34, 33, 33);
+  --test: 34, 33, 33;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  height: 7vh;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(var(--test), 0.5);
+  z-index: 100;
+}
+
+.menulink {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.menulink:hover,
+.footerlink:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(bild\ hero.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 93vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Lobster", sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.subtitle {
+  margin-top: 1.5rem;
+  color: var(--text-color);
+}
+
+.hero-action-button {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  width: fit-content;
+  margin-top: 3rem;
+  display: flex;
+  transition: 0.1s ease-in-out;
+  border: 1px solid var(--primary-color);
+}
+
+.hero-action-button:hover {
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+h2 {
+  border-bottom: 1px solid var(--primary-color);
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+#aboutus,
+#contact {
+  width: 80vw;
+  margin: 2rem 10vw 3rem 10vw;
+  scroll-margin-top: 2rem;
+}
+
+.textaboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.about-action-button {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  width: fit-content;
+  margin-top: 2rem;
+  display: flex;
+  transition: 0.1s ease-in-out;
+  border: 1px solid var(--primary-color);
+}
+
+.about-action-button:hover {
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.5rem;
+  max-width: 80vw;
+  margin-top: 2rem;
+}
+
+#img1 {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  object-fit: cover;
+}
+
+#img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 2;
+}
+
+#open {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(info.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tabelle {
+  width: fit-content;
+}
+
+.daten {
+  width: 100%;
+}
+
+.tag {
+  text-align: left;
+  color: var(--text-color);
+}
+
+.zeit {
+  text-align: right;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+}
+
+.contactimg {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.adress {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.mail-button {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  width: fit-content;
+  margin-top: 1rem;
+  display: flex;
+  transition: 0.1s ease-in-out;
+  border: 1px solid var(--primary-color);
+}
+
+.mail-button:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vw;
+  height: fit-content;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(58, 57, 57);
+  padding: 2rem;
+}
+
+.footerlink {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+.copyright {
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .menulink {
+    font-size: 1.2rem;
+  }
+  .hero-action-button {
+    padding: 1.2rem 2.5rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  #contact {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: space-between;
+    max-width: 80vw;
+  }
+  .contactimg {
+    max-height: 500px;
+  }
+  .footerlink {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  #aboutus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 3rem auto;
+  }
+  .img {
+    max-height: 500px;
+  }
+  .daten {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  #contact {
+    max-width: 1200px;
+    margin: 2rem auto 3rem auto;
+  }
+  .adress {
+    font-size: 1.2rem;
+  }
+  .footerlink {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .kontaktlink {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .hero-action-button,
+  .mail-button {
+    margin-top: 0;
+  }
+  .footerlink {
+    gap: 4rem;
+  }
+}
