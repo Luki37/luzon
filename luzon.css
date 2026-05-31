@@ -334,7 +334,8 @@ h2 {
     margin: 2rem auto 3rem auto;
   }
   .img {
-    max-height: 500px;
+    width: 200%;
+    height: 500px;
   }
   .daten {
     font-size: 1.2rem;
