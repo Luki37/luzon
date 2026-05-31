@@ -116,6 +116,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
+  margin-top: 0;
   color: white;
 }
 
@@ -364,6 +365,10 @@ h2 {
   }
   .mail-button-text {
     font-size: 2vw;
+  }
+  .contactimg {
+    margin-bottom: 2rem;
+    min-width: 50vw;
   }
 }
 
