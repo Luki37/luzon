@@ -89,7 +89,7 @@ html {
 
 .button-bild {
   display: block;
-  width: 30vw;
+  width: 160px;
 }
 
 .button-text {
@@ -97,7 +97,7 @@ html {
   top: 3px;
   right: 3px;
   text-align: end;
-  font-size: 2.8vw;
+  font-size: 15.5px;
 }
 
 .button:hover {
@@ -229,7 +229,7 @@ h2 {
 
 .mail-button-bild {
   display: block;
-  width: 30vw;
+  width: 160px;
 }
 
 .mail-button-text {
@@ -237,7 +237,7 @@ h2 {
   top: 3px;
   right: 3px;
   text-align: end;
-  font-size: 2.8vw;
+  font-size: 15.5px;
 }
 
 .mail-button:hover {
@@ -303,18 +303,6 @@ h2 {
     font-size: 1rem;
     gap: 2rem;
   }
-  .button-bild {
-    width: 25vw;
-  }
-  .button-text {
-    font-size: 2.3vw;
-  }
-  .mail-button-bild {
-    width: 25vw;
-  }
-  .mail-button-text {
-    font-size: 2.3vw;
-  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -353,18 +341,6 @@ h2 {
   .footerlink {
     gap: 3rem;
   }
-  .button-bild {
-    width: 20vw;
-  }
-  .button-text {
-    font-size: 2vw;
-  }
-  .mail-button-bild {
-    width: 20vw;
-  }
-  .mail-button-text {
-    font-size: 2vw;
-  }
   .contactimg {
     margin-bottom: 2rem;
     width: 550px;
@@ -381,18 +357,16 @@ h2 {
   .footerlink {
     gap: 4rem;
   }
+  .contactimg {
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
   .button-bild {
-    width: 15vw;
+    width: 200px;
   }
   .button-text {
-    font-size: 1.5vw;
+    font-size: 20px;
   }
-  .mail-button-bild {
-    width: 15vw;
-  }
-  .mail-button-text {
-    font-size: 1.5vw;
-  }
-  .contactimg {
-  width: 750px;
 }
